@@ -1,4 +1,5 @@
 # production-rag
+RAG System that takes PDF files, Uploads them to QDrant Vector Database and allows LLM to use them as context when answering user queries.  
 
 ## Setup
 
@@ -14,23 +15,23 @@ cd production-rag
 ### Create environment
 
 ```bash
-python -m venv venv 
+python -m venv .venv 
 ```
 
 ### Activate environment
 
 Linux/macOS:
 ```bash
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
 Windows:
 ```bash
-.\venv\Scripts\activate 
+.venv\Scripts\activate 
 ```
 
 ### Install requirements
 
 ```bash
-pip install -r requirements.txt 
+python -m pip install -r requirements.txt 
 ```
